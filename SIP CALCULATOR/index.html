@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Load Chart.js -->
+</head>
+<body>
+    <br>
+    <div class="container">
+        <h1>Systematic Investment Plan Calculator</h1>
+        
+        <div class="form">
+            <label for="amount">Enter the amount you invest at regular intervals</label>
+            <input type="number" id="amount" placeholder="Enter amount" required>
+
+            <label for="time">Enter the Time period (in years)</label>
+            <input type="number" id="time" placeholder="Enter time period" required>
+
+            <label for="rate">Periodic rate of interest (%)</label>
+            <input type="number" id="rate" placeholder="Enter rate of interest" required>
+
+            <button onclick="calculateSIP()">Calculate SIP</button>
+        </div>
+    </div>
+    <div id="result"></div>
+    <br>
+    <!-- Chart Container -->
+    <div class="chart-container">
+        <h1 class="highlight">SIP CHART REPRESENTATION</h1>
+        <canvas id="sipChart"></canvas>
+    </div>
+    <br>
+
+    <script src="script.js"></script>
+</body>
+</html>
